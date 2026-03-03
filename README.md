@@ -170,12 +170,8 @@ git clone https://github.com/your-username/your-repo-name.git
 
 ```
 .
-├── src
-│   └── main.c          # Main application code, ISR, and Logic
-├── docs
-│   └── schematic.pdf   # Circuit diagrams and Pinout
-├── README.md           # Project documentation
-└── LICENSE
+├── sourceCode.c
+└── README.md           # Project documentation
 
 ```
 
