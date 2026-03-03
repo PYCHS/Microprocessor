@@ -181,10 +181,3 @@ git clone https://github.com/your-username/your-repo-name.git
 ---
 
 *Created as a Final Project for the Microcomputer Systems Course at NCKU.* 
-
-
-
-
-
-
-祝你的申請順利！這份 README 會讓你的專案看起來非常專業。
