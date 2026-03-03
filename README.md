@@ -2,6 +2,8 @@
 
 > A robust embedded system project based on PIC18F4520, featuring dual-priority interrupt handling, fail-safe collision prevention, and real-time remote control.
 
+Demo Video: https://drive.google.com/drive/u/1/folders/1L8LjhMxzhJac-d8JmR7wgWvfkAMdfYmc
+
 ## 📖 Overview
 
 This project is a microcomputer system design that integrates **UART communication**, **PWM motor control**, and **ultrasonic sensing** to create a semi-autonomous vehicle. The system allows users to control the vehicle via a Bluetooth mobile app while an onboard safety supervisor monitors environmental data to prevent collisions.
@@ -44,6 +46,7 @@ The core logic is implemented on a **PIC18F4520** microcontroller, utilizing har
 
 
 ## 🛠 System Architecture
+<img width="529" height="565" alt="截圖 2026-03-03 上午11 32 41" src="https://github.com/user-attachments/assets/465c4040-ce84-4c79-b651-25dd25e8f489" />
 
 ### Hardware Components
 
