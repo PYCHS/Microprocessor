@@ -12,32 +12,26 @@ The core logic is implemented on a **PIC18F4520** microcontroller, utilizing har
 
 ### 1. Remote Control & Locomotion
 
-* 
-**Bluetooth Connectivity:** Receives `F` (Forward), `B` (Backward), `L` (Left), `R` (Right), and `S` (Stop) commands via HC-05 module using UART protocol.
+* **Bluetooth Connectivity:** Receives `F` (Forward), `B` (Backward), `L` (Left), `R` (Right), and `S` (Stop) commands via HC-05 module using UART protocol.
 
 
-* 
-**Precision Motor Driving:** Controls DC motors via L298N driver and a Servo motor for directional/interactive components.
+* **Precision Motor Driving:** Controls DC motors via L298N driver and a Servo motor for directional/interactive components.
 
 
 
 ### 2. Intelligent Safety & Feedback (Fail-Safe)
 
-* 
-**Active Collision Prevention:** The system automatically overrides "Forward" commands when an obstacle is detected within **20cm**.
+* **Active Collision Prevention:** The system automatically overrides "Forward" commands when an obstacle is detected within **20cm**.
 
 
-* 
-**Auto-Recovery Mode:** If the vehicle remains in a danger zone (<20cm) for more than **5 seconds**, it automatically reverses to a safe distance to prevent hardware damage.
+* **Auto-Recovery Mode:** If the vehicle remains in a danger zone (<20cm) for more than **5 seconds**, it automatically reverses to a safe distance to prevent hardware damage.
 
 
 * **Audible & Visual Feedback:**
-* 
-**TM1637 Display:** Shows real-time distance in cm.
+* **TM1637 Display:** Shows real-time distance in cm.
 
 
-* 
-**Dynamic Buzzer:** Beep frequency increases as the vehicle approaches obstacles (<60cm: slow, <40cm: medium, <20cm: rapid).
+* **Dynamic Buzzer:** Beep frequency increases as the vehicle approaches obstacles (<60cm: slow, <40cm: medium, <20cm: rapid).
 
 
 
@@ -45,8 +39,7 @@ The core logic is implemented on a **PIC18F4520** microcontroller, utilizing har
 
 ### 3. Interactive Elements
 
-* 
-**Laser & Servo Action:** Special command `H` triggers a laser module and a synchronized servo "tail-wagging" sequence for demonstration purposes.
+* **Laser & Servo Action:** Special command `H` triggers a laser module and a synchronized servo "tail-wagging" sequence for demonstration purposes.
 
 
 
@@ -84,16 +77,13 @@ The core logic is implemented on a **PIC18F4520** microcontroller, utilizing har
 ### Tech Stack & Tools
 
 * **Language:** Embedded C
-* 
-**IDE:** MPLAB X IDE 
+* **IDE:** MPLAB X IDE 
 
 
-* 
-**Compiler:** XC8 Compiler 
+* **Compiler:** XC8 Compiler 
 
 
-* 
-**Hardware Debugger:** PICkit 3/4 
+* **Hardware Debugger:** PICkit 3/4 
 
 
 
@@ -105,12 +95,10 @@ The core logic is implemented on a **PIC18F4520** microcontroller, utilizing har
 **Solution:**
 
 * Implemented **Dual-Priority Interrupts**:
-* 
-**High Priority (ISR_H):** Handles critical UART reception and ADC conversion to ensure zero command latency.
+* **High Priority (ISR_H):** Handles critical UART reception and ADC conversion to ensure zero command latency.
 
 
-* 
-**Low Priority (ISR_L):** Handles Timer1 overflow for non-critical buzzer toggling.
+* **Low Priority (ISR_L):** Handles Timer1 overflow for non-critical buzzer toggling.
 
 
 
@@ -177,20 +165,16 @@ git clone https://github.com/your-username/your-repo-name.git
 
 ## 👥 Contributors
 
-* 
-**Peng Yi Cheng** (Hardware Integration, System Architecture) 
+* **Peng Yi Cheng** (Hardware Integration, System Architecture) 
 
 
-* 
-**Wang Jyun Kai** (Motor Control Driver) 
+* **Wang Jyun Kai** (Motor Control Driver) 
 
 
-* 
-**Huang Kai hsaun** (Ultrasonic & Display Logic) 
+* **Huang Kai hsaun** (Ultrasonic & Display Logic) 
 
 
-* 
-**Tsia Yuan Chin** (UART Communication & Safety Logic) 
+* **Tsia Yuan Chin** (UART Communication & Safety Logic) 
 
 
 
